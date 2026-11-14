@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajasthan Tourism | Made by Hardik Vijay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#home">Rajasthan<span>.</span></a>
+    <button class="menu" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <a class="active" href="#home">Home</a>
+      <a href="#explorer">City Explorer</a>
+      <a href="#culture">Culture</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+<div class="hero" id="home">
+  <div class="wrap">
+    <div class="eyebrow">Welcome to the land of kings</div>
+    <h1>Discover the Royal<br>Beauty of Rajasthan</h1>
+    <p>Explore historic cities, grand forts, desert landscapes, traditional food and colourful culture of India's largest state by area.</p>
+    <a class="btn light" href="#explorer">Explore Cities ↗</a>
+  </div>
+</div>
+<main class="wrap">
+  <section>
+    <h2 class="title">A State Full of Stories</h2>
+    <p class="subtitle">Rajasthan brings together centuries of history, beautiful architecture, lively festivals and warm hospitality.</p>
+    <div class="grid">
+      <div class="tile"><div class="emoji">🏰</div><h3>Royal Heritage</h3><p>Discover forts, palaces, stepwells and old havelis that tell stories of historic kingdoms.</p></div>
+      <div class="tile"><div class="emoji">🏜️</div><h3>Desert Landscapes</h3><p>Experience the Thar Desert, golden sand dunes, camel rides and unforgettable sunsets.</p></div>
+      <div class="tile"><div class="emoji">🎨</div><h3>Colourful Culture</h3><p>Enjoy folk music, traditional dances, handmade crafts, festivals and regional clothing.</p></div>
+    </div>
+  </section>
+  <section id="explorer">
+    <div class="pagehead">
+      <div class="eyebrow">Search and discover</div>
+      <h1>Rajasthan City Explorer</h1>
+      <p>Type a city name or choose one from the list. Explore its history, founding information, famous food, traditional dress, culture and top attractions.</p>
+    </div>
+    <div class="searchbox">
+      <input id="citySearch" type="search" placeholder="Search Jaipur, Kota, Udaipur, Bikaner..." autocomplete="off" aria-label="Search a Rajasthan city">
+      <button class="btn" id="clearSearch">Clear</button>
+    </div>
+    <p class="hint">Try: Jaipur · Jodhpur · Kota · Ajmer · Bundi · Pushkar · Barmer</p>
+    <div class="city-layout">
+      <div>
+        <h3 style="color:#71351f">Choose a city</h3>
+        <div class="city-list" id="cityList"></div>
+        <p id="noCity" class="empty">No match in this project guide. Try another Rajasthan city from the list.</p>
+      </div>
+      <article class="panel detail" id="cityDetail" aria-live="polite"><p>Loading city information...</p></article>
+    </div>
+    <p class="smallprint">This student project includes a curated guide to selected Rajasthan cities and places. It is not connected to a live worldwide city database.</p>
+  </section>
+  <section id="culture">
+    <div class="pagehead">
+      <div class="eyebrow">Traditions and lifestyle</div>
+      <h1>The Culture of Rajasthan</h1>
+      <p>A closer look at the food, clothes, art, music and festivals that make Rajasthan special.</p>
+    </div>
+    <div class="grid">
+      <div class="tile"><div class="emoji">🍛</div><h3>Food</h3><p><b>Dal Baati Churma:</b> baked wheat baati, lentils and sweet churma.<br><br><b>Gatte ki Sabzi:</b> gram-flour dumplings in spiced yoghurt gravy.<br><br><b>Ker Sangri:</b> a traditional desert dish made with local beans and berries.</p></div>
+      <div class="tile"><div class="emoji">👗</div><h3>Traditional Dress</h3><p>Women's traditional clothing often includes ghagra, choli and odhni. Men's clothing can include dhoti or kurta with a safa (turban). Bandhani, leheriya and mirror-work fabrics are well known.</p></div>
+      <div class="tile"><div class="emoji">💃</div><h3>Dance & Music</h3><p>Ghoomar is a graceful folk dance. Kalbelia is known for energetic movements. Folk musicians use instruments such as kamayacha, sarangi, dholak and algoza.</p></div>
+      <div class="tile"><div class="emoji">🎉</div><h3>Festivals</h3><p>Gangaur, Teej, Pushkar Fair and the Desert Festival celebrate Rajasthan's traditions with music, fairs and colourful events.</p></div>
+      <div class="tile"><div class="emoji">🧵</div><h3>Arts & Crafts</h3><p>Rajasthan is known for blue pottery, block printing, miniature paintings, meenakari jewellery, leather mojari footwear and embroidery.</p></div>
+      <div class="tile"><div class="emoji">🏛️</div><h3>Architecture</h3><p>Forts, palaces, jharokhas, courtyards, stepwells and intricately carved havelis reflect the region's craftsmanship and history.</p></div>
+    </div>
+    <div class="note">Clothing varies by region, community, weather and occasion. These are broad cultural examples, not a dress rule for every person.</div>
+  </section>
+  <section id="about">
+    <div class="pagehead">
+      <div class="eyebrow">About this project</div>
+      <h1>Rajasthan Tourism Website</h1>
+      <p>A detailed educational website made to introduce the history, destinations and cultural identity of Rajasthan.</p>
+    </div>
+    <div class="panel" style="padding:28px">
+      <h2 style="color:#71351f;font-family:Georgia,serif">Project Details</h2>
+      <p>This website is created as a web development assignment using three basic technologies:</p>
+      <div class="grid">
+        <div class="tile"><h3>HTML</h3><p>Used to create the structure, navigation, headings, city information and page content.</p></div>
+        <div class="tile"><h3>CSS</h3><p>Used to design the colours, layout, cards, responsive sections and overall appearance.</p></div>
+        <div class="tile"><h3>JavaScript</h3><p>Used to make city search interactive and display the selected city's detailed information.</p></div>
+      </div>
+      <h3 style="color:#71351f;margin-top:28px">Important note about historical dates</h3>
+      <p>Some cities have a well-recorded foundation year, while ancient settlements may not have one exact known date. In those cases, this project uses wording such as “origins uncertain” or “traditional attribution” to avoid presenting uncertain history as fact.</p>
+    </div>
+    <div class="banner" style="margin-top:25px">
+      <h2>Made by Hardik Vijay</h2>
+      <p>Rajasthan Tourism · HTML, CSS and JavaScript Assignment</p>
+      <a class="btn light" href="#home">Back to Top ↑</a>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><b>Rajasthan Tourism Project</b><br>Created by Hardik Vijay · HTML, CSS & JavaScript Assignment</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
